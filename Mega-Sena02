@@ -1,0 +1,24 @@
+# 1️⃣ Navegar até a pasta do projeto
+cd caminho/para/mega-sena-app
+
+# 2️⃣ Inicializar o Git local
+git init
+
+# 3️⃣ Conectar ao repositório remoto (substitua SEU_USUARIO)
+git remote add origin https://github.com/SEU_USUARIO/mega-sena-app.git
+
+# 4️⃣ Criar .gitignore (evita arquivos temporários)
+echo "~$*.xlsx" >> .gitignore
+echo "*.xlsm" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo "__pycache__/" >> .gitignore
+
+# 5️⃣ Adicionar todos os arquivos ao Git
+git add .
+
+# 6️⃣ Fazer o commit inicial
+git commit -m "Adiciona planilha Mega-Sena e arquivos do app"
+
+# 7️⃣ Definir branch principal e enviar para o GitHub
+git branch -M main
+git push -u origin main
